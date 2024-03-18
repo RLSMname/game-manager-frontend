@@ -26,7 +26,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="games" element={<Games list={list}/>} />
-          <Route path="games/add" element={<Add setList={setList}></Add>}></Route>
+          <Route path="games/add" element={<Add  list={list} setList={setList}></Add>}></Route>
           <Route path="games/:id" element={<Details />} />
           <Route path="*" element={<NoPage />} />
         </Route>
